@@ -14,7 +14,7 @@ class StatsServiceTest {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long actual = service.totalSale(sales);
-        long expected = 8+ 15+ 13+ 15+ 17+ 20+ 19+ 20+ 7+ 14+ 14+ 18;
+        long expected = 8 + 15 + 13 + 15 + 17 + 20 + 19 + 20 + 7 + 14 + 14 + 18;
 
         Assertions.assertEquals(expected, actual);
     }
@@ -24,7 +24,7 @@ class StatsServiceTest {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long actual = service.averageSale(sales);
-        long expected = (8+ 15+ 13+ 15+ 17+ 20+ 19+ 20+ 7+ 14+ 14+ 18)/12;
+        long expected = (8 + 15 + 13 + 15 + 17 + 20 + 19 + 20 + 7 + 14 + 14 + 18) / 12;
 
         Assertions.assertEquals(expected, actual);
     }
@@ -33,7 +33,7 @@ class StatsServiceTest {
     public void testMonthMaximum() {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        long actual = service.monthMaximumSale (sales);
+        long actual = service.monthMaximumSale(sales);
         long expected = 8;
 
         Assertions.assertEquals(expected, actual);
@@ -43,7 +43,7 @@ class StatsServiceTest {
     public void testMonthMinimum() {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        long actual = service.monthMinimumSale (sales);
+        long actual = service.monthMinimumSale(sales);
         long expected = 9;
 
         Assertions.assertEquals(expected, actual);
@@ -53,7 +53,7 @@ class StatsServiceTest {
     public void testMonthBellowAverage() {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        long actual = service.monthBellowAverage (sales);
+        long actual = service.monthBellowAverage(sales);
         long expected = 5;
 
         Assertions.assertEquals(expected, actual);
@@ -63,7 +63,7 @@ class StatsServiceTest {
     public void testMonthAboveAverage() {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        long actual = service.monthAboveAverage (sales);
+        long actual = service.monthAboveAverage(sales);
         long expected = 5;
 
         Assertions.assertEquals(expected, actual);
